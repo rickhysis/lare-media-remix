@@ -1,4 +1,4 @@
-name: Vercel Preview Deployment
+name: Deploy to Vercel
 on:
   push:
     branches:
@@ -25,8 +25,6 @@ jobs:
 
       - name: Deploy Production
         uses: amondnet/vercel-action@v20
-        id: vercel-deploy-production
-        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           vercel-token: ${{ secrets.VERCEL_TOKEN }}
