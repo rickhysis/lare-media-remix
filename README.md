@@ -2,6 +2,13 @@
 
 Lare Media Teknologi using Deno template for Remix! 🦕
 
+## PageSpeed
+
+<p align="center">
+	<img src="./pagespeed.png" width="600px">
+</p>
+
+
 ## Solution
 
 ✅ Offline to Online
