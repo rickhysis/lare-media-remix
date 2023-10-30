@@ -6,6 +6,10 @@ const services : LinkType[] = [
         link: "/services/lare_pos"
     },
     {
+        name: "E-Gov",
+        link: "/services/e-gov"
+    },
+    {
         name: "erp",
         link: "/services/erp"
     },

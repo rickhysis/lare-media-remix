@@ -1,5 +1,22 @@
 {
     "mainTitle": "Anything to be easy with",
     "mainDescription": "We are a information technology consultant that knows how the digital environment works based on our experience and we are provide all modern digital services",
-    "mainContact": "Get Started Talk With Us"
+    "mainContact": "Get Started Talk With Us",
+    "provideTitle": "What do we offer",
+    "digital_transformation": "Digital Transformation",
+    "digital_transformation_description": "Guide to adopting digital technology and processes to remain competitive and meet evolving customer expectations",
+    "strategy_planing": "IT Strategy and Planning",
+    "strategy_planing_description": "Help develop long-term IT strategies that align with business objectives and ensure operations can continue in disaster situations such as data backups and strategy failures",
+    "development_integration": "Development and Integration",
+    "development_integration_description" : "We offer custom software development services to create customized applications",
+    "infrastructure_design": "Infrastructure Design",
+    "infrastructure_design_description": "Design reliable IT infrastructure and identify areas that need improvement to increase efficiency, scalability and security",
+    "data_analytics": "Data Analytics",
+    "data_analytics_description": "Help manage and analyze data effectively and implement data-driven decision-making tools",
+    "training_education": "Education and Training",
+    "training_education_description": "Provide training programs to improve employees' IT skills and ensure that they can use new technologies and tools effectively.",
+    "performance_optimization": "Performance Optimization",
+    "performance_optimization_description": "Improve systems to improve performance and efficiency and reduce IT costs without sacrificing quality of service or security",
+    "testimonial1": "Wow... It's really nice to be able to work with Lare Media Teknologi, they really helped us who were initially very confused about recording transactions but thanks to their advice everything is now easy",
+    "testimonial2": "Lare Media team's activeness in communicating makes it easier for us to oversee the development of the applications we need"
 }

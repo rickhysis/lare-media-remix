@@ -8,6 +8,7 @@ export default {
   serverDependenciesToBundle: [
     "remix-i18next",
     "accept-language-parser",
-    "react-icons/ri"
+    "react-icons/ri",
+    "react-icons/si"
   ],
 };

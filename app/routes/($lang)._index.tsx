@@ -1,18 +1,14 @@
-import { useEffect } from "react";
-import { useTranslation } from "react-i18next";
+import HomeClient from "~/components/home/HomeClients";
 import HomeMain from "~/components/home/HomeMain";
+import HomeProvide from "~/components/home/HomeProvide";
 import Layout from "~/components/layouts/LayoutMain";
 
 export default function Index() {
-  let { i18n } = useTranslation();
-
-  useEffect(() => {
-    i18n.changeLanguage('id');
-  }, [i18n]);
-
   return (
     <Layout>
       <HomeMain />
+      <HomeProvide />
+      <HomeClient />
     </Layout>
   );
 }

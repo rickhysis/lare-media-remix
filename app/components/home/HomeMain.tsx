@@ -2,7 +2,7 @@ import React, { useMemo } from "react";
 import { motion } from "framer-motion";
 import getScrollAnimation from "@/utils/scrool_animation";
 import ScrollAnimation from "@/components/utils/ScrollAnimation";
-import { delivers } from "~/constant/delivers";
+import { delivers } from "~/constants/delivers";
 import type DeliverType from "~/types/deliver";
 import { useTranslation } from "react-i18next";
 import { Link } from "@remix-run/react";
@@ -25,7 +25,7 @@ const HomeMain: React.FC<HomeMainProps> = () => {
                     variants={scrollAnimation}>
                     <div className=" flex flex-col justify-center items-start row-start-2 sm:row-start-1 max-w-screen-xl px-8 xl:px-16 mx-auto">
                         <h1 className="text-3xl lg:text-4xl xl:text-5xl font-medium text-white leading-normal">
-                            {t('mainTitle')} <strong>Lare Media</strong>.
+                            {t('mainTitle')} <strong>Lare Media</strong>
                         </h1>
                         <p className="text-white mt-4 mb-6">
                             {t('mainDescription')}
@@ -33,7 +33,7 @@ const HomeMain: React.FC<HomeMainProps> = () => {
                         <Link
                             target="_blank"
                             to={'https://wa.me/6282139003992?text=Hello+lare+media+teknologi'}
-                            className="py-3 lg:py-4 px-12 lg:px-16 text-gray-700 font-semibold rounded-lg bg-white hover:shadow-orange-md transition-all outline-none"
+                            className="py-3 lg:py-4 px-12 lg:px-16 text-gray-700 font-semibold rounded-lg bg-white hover:bg-gray-200 transition-all outline-none"
                         >
                             {t('mainContact')}
                         </Link>
@@ -51,10 +51,10 @@ const HomeMain: React.FC<HomeMainProps> = () => {
             </ScrollAnimation>
             <div className="relative w-full flex max-w-screen-xl px-8 xl:px-16 mx-auto">
                 <ScrollAnimation
-                    className="rounded-lg w-full grid grid-flow-row sm:grid-flow-row grid-cols-1 sm:grid-cols-2 py-9 divide-y-2 sm:divide-y-0 sm:divide-x-2 divide-gray-100 bg-white-500 z-10">
+                    className="rounded-lg w-full grid grid-flow-row sm:grid-flow-row grid-cols-1 sm:grid-cols-3 py-9 divide-y-2 sm:divide-y-0 sm:divide-x-2 divide-gray-100 bg-white-500 z-10">
                     {delivers.map((deliver: DeliverType, index: number) => (
                         <motion.div
-                            className="flex items-center justify-start sm:justify-center py-4 sm:py-6 w-8/12 px-4 sm:w-auto mx-auto sm:mx-0"
+                            className="flex items-start sm:items-center justify-start sm:justify-center py-4 sm:py-6 w-8/12 px-0 sm:px-4 sm:w-auto mx-auto sm:mx-0"
                             key={index}
                             custom={{ duration: 2 + index }}
                             variants={scrollAnimation}

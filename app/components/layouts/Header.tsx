@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 // Import react scroll
 import { Link as LinkScroll } from "react-scroll";
 import LogoText from "~/assets/svg/LogoText";
-import { pages } from "~/constant/pages";
+import { pages } from "~/constants/pages";
 import type PagesType from "~/types/pages";
 
 const Header = () => {

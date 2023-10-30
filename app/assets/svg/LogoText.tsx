@@ -4,7 +4,7 @@ import React from 'react';
 function LogoText() {
 
     return (
-        <svg viewBox="0 0 520.12500000000006 120" className='w-full h-14 sm:h-28' >
+        <svg viewBox="0 0 520.12500000000006 120" className='sm:w-full h-14 sm:h-28' >
             <defs id="SvgjsDefs5038"></defs>
             <g id="SvgjsG5039" transform="matrix(1,0,0,1,20,20)" fill="#3b82f6">
                 <rect xmlns="http://www.w3.org/2000/svg" width="62" height="78" rx="10" ry="10"></rect>

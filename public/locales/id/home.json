@@ -1,5 +1,22 @@
 {
     "mainTitle": "Semuanya jadi mudah jika bersama",
     "mainDescription": "Kami adalah sebuah konsultan teknologi yang mengetahui cara kerja lingkungan digital berdasarkan pengalaman kami miliki dan kami menyediakan semua layanan digital yang sekarang sedang berkembang",
-    "mainContact": "Mulai Bicara Dengan Kami"
+    "mainContact": "Yuk Konsultasi Gratis",
+    "provideTitle": "Apa saja yang kami tawarkan",
+    "digital_transformation": "Transformasi Digital",
+    "digital_transformation_description": "Membimbing anda dalam mengadopsi teknologi dan proses digital untuk tetap bersaing dan memenuhi harapan pelanggan yang berkembang",
+    "strategy_planing": "Strategi dan Perencanaan",
+    "strategy_planing_description": "Membantu mengembangkan strategi TI jangka panjang yang sejalan dengan tujuan bisnis dan memastikan operasi dapat berlanjut dalam situasi bencana seperti pencadangan data dan strategi failover",
+    "development_integration": "Pengembangan dan Integrasi Teknologi",
+    "development_integration_description": "Kami menawarkan layanan pengembangan perangkat lunak kustom untuk membuat aplikasi yang disesuaikan dengan kebutuhan",
+    "infrastructure_design": "Perancangan Infrastruktur",
+    "infrastructure_design_description": "Merancang infrastruktur TI yang handal dan mengidentifikasi area yang perlu ditingkatkan untuk meningkatkan efisiensi, skalabilitas, dan keamanan",
+    "data_analytics": "Analitika Data",
+    "data_analytics_description": "Membantu mengelola dan menganalisis data dengan efektif dan mengimplementasikan alat pengambilan keputusan berdasarkan data",
+    "training_education": "Edukasi dan Pelatihan",
+    "training_education_description": "Memberikan program pelatihan untuk meningkatkan keterampilan TI karyawan dan memastikan bahwa mereka dapat menggunakan teknologi dan alat baru dengan efektif.",
+    "performance_optimization": "Optimalisasi Kinerja",
+    "performance_optimization_description": "Menyempurnakan sistem untuk meningkatkan kinerja dan efisiensi dan mengurangi biaya TI tanpa mengorbankan kualitas layanan atau keamanan",
+    "testimonial1": "Wah... Senang sekali bisa bekerjasama dengan Lare Media Teknologi, mereka sangat membantu kami yang awalnya sangat bingung dalam hal pencatatan transaksi tapi berkat saran dari mereka semuanya sekarang jadi mudah",
+    "testimonial2": "Keaktifan tim Lare Media dalam berkomunikasi memudahkan kami dalam mengawal pembangunan aplikasi yang kami butuhkan"
 }

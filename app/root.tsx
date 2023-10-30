@@ -13,26 +13,33 @@ import {
   useLoaderData,
 } from "@remix-run/react";
 import i18next from "~/i18next.server";
-import stylesheet from "~/tailwind.css";
+import tailwind from "~/styles/tailwind.css";
+import stylesheet from "~/styles/shared.css";
 import { structuredJsonLD } from "./utils/meta";
 
 
 export const loader = async ({
   request,
+  params
 }: LoaderFunctionArgs) => {
   let locale = await i18next.getLocale(request);
   let t = await i18next.getFixedT(request);
   let title = t("title");
   let description = t("description");
 
-  return json({ locale, title, description });
+  if(params.lang) {
+    locale = params.lang
+  }
+  
+  return json({ locale, title, description, params });
 }
 export let handle = {
   i18n: "common",
 };
 
 export const links: LinksFunction = () => [
-  { rel: "stylesheet", href: stylesheet },
+  { rel: "stylesheet", href: tailwind },
+  { rel: "stylesheet", href: stylesheet, loader: "sass"},
   { rel: "canonical", lang: 'en', href: 'https://www.lare-media.tech' },
   { rel: "alternate", lang: 'id', href: 'https://www.lare-media.tech/id' },
   { rel: "alternate", lang: 'id', href: 'https://www.lare-media.tech/id' },
@@ -44,8 +51,8 @@ export const meta: MetaFunction<typeof loader> = ({
 }) => {
 
   return [
-    { title: data?.title },
-    { name: "description", content: data?.description },
+    { title: data?.title || 'Lare Media Teknologi'},
+    { name: "description", content: data?.description || 'Kami penyedia jasa pembuatan website aplikasi kasir, pos, penjualan, e commerce, web3, nft, erp' },
     { name: "robots", content: 'all' },
     { name: "keywords", content: 'Lare Media Teknologi, konsultan it, kasir, technology, surabaya, software house, pembuatan website, nft, web3, jasa pembuatan, konsultan terbaik, buat website, website murah, aplikasi murah' },
     { name: "og:type", content: 'website' },
