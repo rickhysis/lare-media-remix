@@ -24,10 +24,10 @@ const HomeMain: React.FC<HomeMainProps> = () => {
                     className="grid grid-flow-row sm:grid-flow-col grid-rows-2 md:grid-rows-1 sm:grid-cols-2 gap-12 py-8 px-2 sm:py-12 bg-lare-media-cover"
                     variants={scrollAnimation}>
                     <div className=" flex flex-col justify-center items-start row-start-2 sm:row-start-1 max-w-screen-xl px-8 xl:px-16 mx-auto">
-                        <h1 className="text-3xl lg:text-4xl xl:text-5xl font-medium text-white leading-normal">
+                        <h1 className="text-3xl lg:text-4xl xl:text-5xl font-medium text-gray-100 leading-normal">
                             {t('mainTitle')} <strong>Lare Media</strong>
                         </h1>
-                        <p className="text-white mt-4 mb-6">
+                        <p className="text-gray-200 mt-4 mb-6">
                             {t('mainDescription')}
                         </p>
                         <Link
@@ -40,11 +40,11 @@ const HomeMain: React.FC<HomeMainProps> = () => {
                     </div>
                     <div className="flex w-full py-2">
                         <motion.div className="h-full w-full" variants={scrollAnimation}>
-                            <img
-                                src="/images/bg-1.webp"
-                                alt="Lare media technology main"
-                                className="w-full"
-                            />
+                            <picture>
+                                <source media="(max-width: 799px)" src="/images/bg-1-sm.webp" />
+                                <source media="(min-width: 1500px)" src="/images/bg-1-lg.webp" />
+                                <img src="/images/bg-1.webp" alt="Lare media technology main" />
+                            </picture>
                         </motion.div>
                     </div>
                 </motion.div>

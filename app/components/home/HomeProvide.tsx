@@ -20,16 +20,17 @@ const HomeProvide = () => {
             <img
               src="/images/bg-2.webp"
               alt="Lare media character"
-              className="w-full max-h-[600px]"
+              width={400}
+              height={600}
             />
           </motion.div>
         </ScrollAnimation>
 
         <ScrollAnimation className="sm:col-span-2 ml-3 mt-2">
           <motion.div className="flex flex-col justify-center ml-auto w-full" variants={scrollAnimation}>
-            <h3 className="text-3xl lg:text-4xl font-medium leading-relaxed text-black-600">
+            <h2 className="text-3xl lg:text-4xl font-medium leading-relaxed text-black-600">
               {t('provideTitle')} ?
-            </h3>
+            </h2>
             <ul className="text-black-500 self-start list-inside py-2">
               {provides.map((provide, index) => (
                 <motion.li

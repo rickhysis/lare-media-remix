@@ -51,8 +51,8 @@ export const meta: MetaFunction<typeof loader> = ({
 }) => {
 
   return [
-    { title: data?.title || 'Lare Media Teknologi'},
-    { name: "description", content: data?.description || 'Kami penyedia jasa pembuatan website aplikasi kasir, pos, penjualan, e commerce, web3, nft, erp' },
+    { title: 'Lare Media Teknologi'},
+    { name: "description", content: 'Kami penyedia jasa pembuatan website aplikasi kasir, pos, penjualan, e commerce, web3, nft, erp' },
     { name: "robots", content: 'all' },
     { name: "keywords", content: 'Lare Media Teknologi, konsultan it, kasir, technology, surabaya, software house, pembuatan website, nft, web3, jasa pembuatan, konsultan terbaik, buat website, website murah, aplikasi murah' },
     { name: "og:type", content: 'website' },

@@ -28,14 +28,16 @@ const HomeClient = () => {
                         </motion.h3>
                     </ScrollAnimation>
                     <ScrollAnimation>
-                        <motion.div className="w-full flex justify-evenly items-center mt-4 flex-wrap lg:flex-nowrap" variants={scrollAnimation}>
+                        <motion.div className="w-full flex justify-evenly items-center mt-4 flex-wrap lg:flex-nowrap py-4" variants={scrollAnimation}>
                             {/* Clients */}
                             {clients.map((client, index) => (
                                 <img
                                     key={index}
                                     src={client.image}
-                                    className="h-14 w-auto mt-4 lg:mt-2"
+                                    height={56}
+                                    width={200}
                                     alt={client.name}
+                                    className="mt-4"
                                 />
                             ))}
                         </motion.div>
@@ -43,20 +45,20 @@ const HomeClient = () => {
                     <ScrollAnimation>
                         <motion.h3
                             variants={scrollAnimation}
-                            className="text-2xl sm:text-3xl lg:text-4xl font-medium text-black-600 leading-relaxed w-9/12 sm:w-6/12 lg:w-4/12 mx-auto capitalize mt-2 sm:mt-8">
+                            className="text-2xl sm:text-3xl lg:text-4xl font-medium text-black-600 leading-relaxed w-9/12 sm:w-6/12 lg:w-4/12 mx-auto capitalize mt-4 sm:mt-8">
                             {t('partner')}
                         </motion.h3>
                     </ScrollAnimation>
                     <ScrollAnimation>
-                        <motion.div className="w-full flex justify-evenly items-center mt-4 flex-wrap lg:flex-nowrap" variants={scrollAnimation}>
+                        <motion.div className="w-full flex justify-evenly items-center mt-4 flex-wrap lg:flex-nowrap py-4" variants={scrollAnimation}>
                             {/* Cloud Partner */}
-                            <SiAmazonaws className="h-14 w-auto mt-4 lg:mt-2" />
-                            <SiAlibabacloud className="h-14 w-auto mt-4 lg:mt-2" />
-                            <SiAnsible className="h-14 w-auto mt-4 lg:mt-2" />
-                            <SiCloudflare className="h-14 w-auto mt-4 lg:mt-2" />
-                            <SiDigitalocean className="h-14 w-auto mt-4 lg:mt-2" />
-                            <SiGooglecloud className="h-14 w-auto mt-4 lg:mt-2" />
-                            <SiMicrosoftazure className="h-14 w-auto mt-4 lg:mt-2" />
+                            <SiAmazonaws className="h-14 w-full sm:w-auto" />
+                            <SiAlibabacloud className="h-14 w-full sm:w-auto" />
+                            <SiAnsible className="h-14 w-full sm:w-auto" />
+                            <SiCloudflare className="h-14 w-full sm:w-auto" />
+                            <SiDigitalocean className="h-14 w-full sm:w-auto" />
+                            <SiGooglecloud className="h-14 w-full sm:w-auto" />
+                            <SiMicrosoftazure className="h-14 w-full sm:w-auto" />
                         </motion.div>
                     </ScrollAnimation>
                 </div>
@@ -83,9 +85,9 @@ const HomeClient = () => {
                         <motion.div variants={scrollAnimation} custom={{ duration: 3 }}>
                             <div className="absolute rounded-xl py-8 sm:py-14 px-6 sm:px-12 lg:px-16 w-full flex flex-col sm:flex-row justify-between items-center z-10 bg-white-500">
                                 <div className="flex flex-col text-left w-10/12 sm:w-7/12 lg:w-5/12 mb-6 sm:mb-0">
-                                    <h5 className="text-black-600 text-xl sm:text-2xl lg:text-3xl leading-relaxed font-medium">
+                                    <h3 className="text-black-600 text-xl sm:text-2xl lg:text-3xl leading-relaxed font-medium">
                                         {t('titleNews')}
-                                    </h5>
+                                    </h3>
                                     <p>{t('titleNewsDescription')}.</p>
                                 </div>
                                 <Link to="/news" className="py-3 lg:py-4 px-12 lg:px-16 text-white font-semibold rounded-lg bg-lare-media hover:bg-sky-600 transition-all outline-none">

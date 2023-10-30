@@ -15,7 +15,7 @@ const Footer = () => {
   return (
     <div className="bg-white-300 pt-44 pb-24">
       <div className="max-w-screen-xl w-full mx-auto px-6 sm:px-8 lg:px-16 grid grid-rows-4 sm:grid-rows-1 grid-flow-row sm:grid-flow-col grid-cols-3 sm:grid-cols-12 gap-4">
-        <div className="row-span-2 sm:col-span-4 col-start-1 col-end-4 sm:col-end-5 flex flex-col items-start ">
+        <div className="row-span-2 sm:col-span-4 col-start-1 col-end-4 sm:col-end-5 flex flex-col items-start">
           <LogoText />
           <p className="mb-4">
             <strong className="font-medium">PT. Lare Media Teknologi</strong> {t('footerDescription')}
@@ -31,7 +31,7 @@ const Footer = () => {
               <RiInstagramLine className="h-6 w-6" />
             </div>
             <div className="mx-2 bg-white-500 rounded-full items-center justify-center flex p-2 shadow-md">
-              <Link to="https://www.linkedin.com/company/lare-media-teknologi" target="_blank">
+              <Link to="https://www.linkedin.com/company/lare-media-teknologi" target="_blank" aria-label="Linkedin">
                 <RiLinkedinLine className="h-6 w-6" />
               </Link>
             </div>
