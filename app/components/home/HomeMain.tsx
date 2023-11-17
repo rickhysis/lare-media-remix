@@ -32,7 +32,7 @@ const HomeMain: React.FC<HomeMainProps> = () => {
                         </p>
                         <Link
                             target="_blank"
-                            to={'https://wa.me/6282139003992?text=Hello+lare+media+teknologi'}
+                            to={'https://wa.me/085755010105?text=Hello+lare+media+teknologi'}
                             className="py-3 lg:py-4 px-12 lg:px-16 text-gray-700 font-semibold rounded-lg bg-white hover:bg-gray-200 transition-all outline-none"
                         >
                             {t('mainContact')}
